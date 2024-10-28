@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekomendasi Laptop</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/logikaDropdown.js"></script>
+</head> 
+<body>
+    <div class="running-text">
+        <marquee scrollamount="20">DATA LAPTOP YANG DITAMPILKAN BELUM UPDATE VERSI 2024</marquee>
+    </div>
+
+    <div class="container">  
+        <div class="main-content">
+            <div class="title">
+                <h2>HYPERION TECH</h2>
+            </div>
+            <div class="form">
+                <form id="form-laptop" method="POST" action="/">
+                    <div class="RAM">
+                        <div class="ram-label">
+                            <label for="ram">RAM</label>
+                        </div>
+                        <div class="ram-option">
+                            <select name="ram" id="ram-select">
+                                <option value="8">8</option>
+                                <option value="16">16</option>
+                                <option value="32">32</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="Memory">
+                        <div class="memory-label">
+                            <label for="memory">Memory</label>
+                        </div>
+                        <div class="memory-option">
+                            <select name="memory" id="memory-select">
+                                <option value="64">64</option>
+                                <option value="128">128</option>
+                                <option value="256">256</option>
+                                <option value="512">512</option>
+                                <option value="1024">1024</option>
+                                <option value="2048">2048</option>
+                            </select>
+                        </div> 
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+                <script src="../static/logikaTampilOutput.js"></script>
+                <script src="../static/logikaAmbilListLaptop.js"></script>
+            </div>
+        </div>
+    </div>
+    <div class="loading-gif">
+        <marquee scrollamount="30">
+            <div class="text">
+                <h2>BELUM ADA DATA LAPTOPNYA DIBAWAH, SUBMIT DULU ITU FORM DIATAS MANIS</h2>
+            </div>
+            <div class="img">
+                <img src="../static/herta.gif" alt="Loading...">
+            </div>
+        </marquee>
+    </div>
+    <div class="output-container" id="output-section">
+        <div class="output">
+            <div class="kecepatan">
+                <h2 id="kecepatan-output"></h2>
+                <button onclick="tutupKecepatan()">X</button>
+            </div>
+        </div>
+        <div class="list">
+            <ul id="laptop-list">
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
